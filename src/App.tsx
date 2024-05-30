@@ -4,10 +4,11 @@ import Button from "./components/Button";
 import { exportCanvasAsImage } from "./utils/imageExport";
 import { useDispatch } from "react-redux";
 import { clearPoints } from "./features/drawingSlice";
+import defaultImage from "./assets/aerial-multipleroofs-sanmateo-ca-2019-03-17.webp";
 
 const App = () => {
   const dispatch = useDispatch();
-  const [image, setImage] = useState<string | null>(null);
+  const [image, setImage] = useState<string>(defaultImage);
 
   const handleExport = () => {
     const canvas = document.querySelector("canvas");
@@ -32,7 +33,7 @@ const App = () => {
   };
 
   return (
-    <div className=" h-screen flex flex-col items-center bg-fuchsia-300 p-4 ">
+    <div className=" h-full flex flex-col items-center bg-fuchsia-300 p-4 ">
       <h1 className="text-2xl font-bold mb-4">Roof Drawing App</h1>
       <Canvas image={image} />
       <div className="mt-4 flex space-x-2">

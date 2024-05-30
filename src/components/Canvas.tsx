@@ -5,7 +5,7 @@ import { RootState } from "../store/store";
 import useCanvas from "../hooks/useCanvas";
 
 interface CanvasProps {
-  image: string | null;
+  image: string;
 }
 
 const Canvas = ({ image }: CanvasProps) => {
