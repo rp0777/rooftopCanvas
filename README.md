@@ -42,7 +42,6 @@ Web scraping of Food Grab website using XHR requests
 ## :rocket: Technologies
 
 The following tools were used in this project:
-s
 
 - [Typescript](https://www.typescriptlang.org/)
 - [React](https://react.dev/)
